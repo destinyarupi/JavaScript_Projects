@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.4rem;
+    background: #4b6cb7; 
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+    background: linear-gradient(to right, #182848, #4b6cb7); 
+}
+
+header {
+    margin: -4rem 0 2rem 0;
+}
+
+h1 {
+    font-size: 1.9rem;
+    font-weight: normal;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 40px;
+
+}
+
+.time h2 {
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 716px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .countdown {
+        gap: 150px
+    }
+}

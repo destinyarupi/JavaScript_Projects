@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    border: none;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+#btn{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #101020;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 420px;
+    padding: 30px 20px;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    overflow: hidden;
+}
+
+#toast {
+    width: 380px;
+    height: 80px;
+    padding: 20px;
+    background-color: white;
+    box-shadow:0 10px 20px rgba(0, 0, 0, 0.05);
+    border-left: 8px solid #47d764;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 1.2fr 6fr 0.5fr;
+    transform: translate(400px);
+    transition: 1s ease;
+}
+
+.container-1, .container-2{
+    align-self: center;
+}
+
+i{
+    font-size: 40px;
+    color: #47d764;
+}
+
+.container-2 p:first-child{
+    color: #101010;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.container-2 p:last-child{
+    font-size: 12px;
+    color: #656565;
+    font-weight: 400;
+}
+
+#toast button{
+    align-self: flex-start;
+    font-size: 25px;
+    background-color: transparent;
+    line-height: 0;
+    color: #656565;
+    cursor: pointer;
+}

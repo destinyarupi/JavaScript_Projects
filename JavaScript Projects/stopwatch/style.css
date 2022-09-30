@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+:root {
+    --primary: crimson;
+    --dark: #1f2937;
+    --darkdark: #111827;
+    --light: #f3f4f6;
+}
+
+body {
+    background: var(--dark);
+    color: var(--light);
+}
+
+.container {
+    text-align: center;
+    background-color: var(--darkdark);
+    width: 90%;
+    margin: 11rem auto;
+    padding: 2.5rem 0rem;
+    border-radius: 1rem;
+}
+
+.watch {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.watch span {
+    display: inline-block;
+    width: 5rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+
+    color: var(--light);
+    font-size: 0.88rem;
+    background-color: var(--primary);
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    transition: 0.4s;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button:active {
+    background-color: var(--dark);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 45%;
+        padding: 5rem 0rem;
+    }
+    
+    .watch {
+        font-size: 4.5rem;
+    }
+}

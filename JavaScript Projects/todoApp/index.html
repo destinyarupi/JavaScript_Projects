@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List | Destiny Arupi</title>
+    <!-- Local stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/a0b5f4b3f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main id="app">
+        <header>
+            <nav>
+                <h3><i class="fa-brands fa-asymmetrik"></i>rupi.tasks</h3>
+                <div class="toggle">
+                    <i class="indicator"></i>
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-regular fa-sun"></i>  
+                </div>
+            </nav>
+        </header>
+        <section class="todoApp-body">
+            <div class="preview">
+                <div class="img-wrapper">
+                    <img src="Task-cuate.svg" alt="">    
+                </div>
+                <div class="text-wrapper">
+                    <h3>Create a new todo</h3>
+                    <p>Hey there, what's on your todo list today?</p>
+                </div>
+            </div> 
+            <div class="todo-list"></div>
+            <div class="pop-up-bg">
+                <div class="pop-up">
+                    <div class="header">
+                        <h3>Add a new todo</h3>
+                    </div>
+                    <form class="input-fields">
+                        <input type="text" class="todo" placeholder="Task"/>
+                        <div class="dropdown">
+                            <div class="select">
+                                <input class="selected" placeholder="Category" value="" readonly/>
+                                <div class="caret-wrapper">
+                                    <div class="caret"></div>
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <label>
+                                    <input type="radio" name="category" value="Personal"/>
+                                    <span class="bubble personal"></span>
+                                    <p>Personal</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="category" value="Work"/>
+                                    <span class="bubble work"></span>
+                                    <p>Work</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="category" value="Urgent"/>
+                                    <span class="bubble urgent"></span>
+                                    <p>Urgent</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="category" value="School"/>
+                                    <span class="bubble school"></span>
+                                    <p>School</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="category" value="Others"/>
+                                    <span class="bubble others"></span>
+                                    <p>Others</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pop-up-actions">
+                            <span class="cancel">Cancel</span>
+                            <button class="save">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="addtodo">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span>ADD TODO</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Local JavaScript -->
+    <script src="script.js"></script>
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

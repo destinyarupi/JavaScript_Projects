@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App | Destiny Arupi</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/a0b5f4b3f8.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="heading-mobile">
+                <h3><i class="fa-brands fa-asymmetrik"></i>rupi.notePad</h3>
+                <div class="toggle">
+                    <i class="indicator"></i>
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-regular fa-sun"></i>  
+                </div>
+            </div>
+            <div class="search-wrapper">
+                <input type="text" class="search-bar" placeholder="Search notes">
+                <button type="submit" class="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="container"></div>
+        </header>
+        <main>
+            <div class="heading-desktop">
+                <h3><i class="fa-brands fa-asymmetrik"></i>rupi.notePad</h3>
+                <div class="toggle" id="toggle-desk">
+                    <i class="indicator"></i>
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-regular fa-sun"></i>  
+                </div>
+            </div>
+            <div class="preview">
+                <div class="img-wrapper">
+                    <img src="Mobile note list-cuate.png" alt="">    
+                </div>
+                <div class="text-wrapper">
+                    <h3>Add a New Note</h3>
+                    <p>Click the " <span><img src="icons8-notes-64.png" alt="" class="add-icon-small"></span>" button to write something new</p>
+                </div>
+            </div>
+            <div class="text-editor">
+                <form action="#">
+                    <div class="form-head">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span class="dateTime"></span>
+                    </div>
+                    <div class="title">
+                        <input type="text" spellcheck="false" placeholder="Title">
+                    </div>
+                    <div class="body">
+                        <textarea spellcheck="false" placeholder="Note something down"></textarea>
+                    </div>
+                    <button type="submit" class="saveNote">
+                        <img src="icons8-done-64-white.png" alt="" class="add-icon save-icon">
+                    </button>
+                </form>
+            </div>
+            <button type="button" class="addNote">
+                <img src="icons8-notes-64-white.png" alt="" class="add-icon">
+            </button>
+        </main>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

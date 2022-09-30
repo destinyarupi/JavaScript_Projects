@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation | Destiny Arupi</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a0b5f4b3f8.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Local stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand-logo">
+                <h3><i class="fa-brands fa-asymmetrik"></i>rupi.forms</h3>
+            </div>
+            <ul class="nav-items">
+                <li><a href="log-in.html" class="nav-links">Log in</a></li>
+                <li><a href="index.html" class="nav-links nav-signUp">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ 
+    <main id="log-in">
+        <!-- Main text -->
+        <div class="text">
+            <span>Login to your account</span>
+        </div>
+        
+        <!-- Login form inputs -->
+        <form action="/" method="get">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and be at least 8 or more characters" required>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="checkbox" name="checkbox" required>
+                <label for="checkbox" class="remember">Remember me</label>
+            </div>
+            <div>
+                <p class="forgot-pass"><a href="">Forgot password?</a></p>
+            </div>
+            <button type="submit">Sign in</button>
+            <div class="RuleWithText">
+                <hr>
+                <p class="or">OR</p>
+            </div>
+            <div class="form-footer">
+                <label for="socials" class="socials">Sign in with social</label>
+                <section id="social-signUp">
+                  <svg id="Button_-_Google" data-name="Button - Google" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                    <rect id="Background" width="50" height="50" rx="25" fill="#fff"/>
+                    <g id="Group_69890" data-name="Group 69890" transform="translate(13 10.771)">
+                      <g id="logo_googleg_48dp" transform="translate(0 2.228)">
+                        <path id="Shape" d="M20.52,9.818A13.788,13.788,0,0,0,20.3,7.364H9v4.642h6.458a5.52,5.52,0,0,1-2.395,3.622v3.011h3.878a11.7,11.7,0,0,0,3.578-8.82Z" transform="translate(3 2.455)" fill="#4285f4" fill-rule="evenodd"/>
+                        <path id="Shape-2" data-name="Shape" d="M11.681,20.43a11.456,11.456,0,0,0,7.942-2.907l-3.878-3.011a7.24,7.24,0,0,1-10.778-3.8H.957v3.109A12,12,0,0,0,11.681,20.43Z" transform="translate(0.319 3.57)" fill="#34a853" fill-rule="evenodd"/>
+                        <path id="Shape-3" data-name="Shape" d="M5.285,12.627a7.094,7.094,0,0,1,0-4.56V4.958H1.276a12.015,12.015,0,0,0,0,10.778l4.009-3.109Z" transform="translate(0 1.653)" fill="#fbbc05" fill-rule="evenodd"/>
+                        <path id="Shape-4" data-name="Shape" d="M11.681,4.773a6.483,6.483,0,0,1,4.587,1.795L19.71,3.125A11.533,11.533,0,0,0,11.681,0,12,12,0,0,0,.957,6.611L4.966,9.72a7.152,7.152,0,0,1,6.715-4.947Z" transform="translate(0.319)" fill="#ea4335" fill-rule="evenodd"/>
+                        <path id="Shape-5" data-name="Shape" d="M0,0H24V24H0Z" fill="none" fill-rule="evenodd"/>
+                      </g>
+                    </g>
+                  </svg>
+                  <img src="f_logo_RGB-Blue_58.png" alt="facebook-icon" width="50" height="50">
+                  <svg id="Group_155509" data-name="Group 155509" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                    <rect id="Background" width="50" height="50" rx="25"/>
+                      <g id="Group_74582" data-name="Group 74582" transform="translate(14.5 10.502)">
+                        <path id="Apple_logo_black" d="M37.33,23.428a13.555,13.555,0,0,1-1.34,2.41,12.244,12.244,0,0,1-1.727,2.087,3.349,3.349,0,0,1-2.219.977,5.562,5.562,0,0,1-2.05-.489,5.882,5.882,0,0,0-2.207-.488,6.081,6.081,0,0,0-2.269.488,6.106,6.106,0,0,1-1.961.516,3.154,3.154,0,0,1-2.269-1,12.857,12.857,0,0,1-1.806-2.161,14.943,14.943,0,0,1-1.91-3.793,13.89,13.89,0,0,1-.8-4.521,8.256,8.256,0,0,1,1.084-4.319,6.36,6.36,0,0,1,2.271-2.3,6.108,6.108,0,0,1,3.07-.866,7.228,7.228,0,0,1,2.374.553,7.633,7.633,0,0,0,1.883.554,11.269,11.269,0,0,0,2.088-.652,6.9,6.9,0,0,1,2.839-.5A6.027,6.027,0,0,1,37.1,12.4a5.252,5.252,0,0,0-2.785,4.771,5.263,5.263,0,0,0,1.728,3.966,5.679,5.679,0,0,0,1.727,1.133q-.208.6-.44,1.156ZM32.519,4.5a5.319,5.319,0,0,1-1.363,3.489,4.645,4.645,0,0,1-3.858,1.9,3.881,3.881,0,0,1-.029-.472,5.464,5.464,0,0,1,1.446-3.525A5.569,5.569,0,0,1,30.477,4.57,5.254,5.254,0,0,1,32.493,4a4.528,4.528,0,0,1,.026.5Z" transform="translate(-16.77 -3.999)" fill="#fff"/>
+                      </g>
+                  </svg>
+                </section>
+                <label for="sign-in" class="sign-in">Need an account? <a href="sign-up.html">Sign up</a></label>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="rights">
+            <span>Destiny Arupi &copy; 2022</span>
+            <span>Terms of Use</span>
+            <span>Privacy Policy</span>
+            <span>Send Feedback</span>
+        </div>
+    </footer>
+</body>
+</html>

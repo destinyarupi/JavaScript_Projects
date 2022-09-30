@@ -1,0 +1,128 @@
+:root {
+    --primary: #d81e5b;
+    --secondary: #8a4fff;
+    --grey: #aaa;
+    --light: #eee;
+    --dark: #131a26;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: var(--light);
+}
+
+main {
+    padding: 3rem 2rem;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--dark);
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--grey);
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.counter {
+    background-color: var(--dark);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+.counter-value {
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.counter-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -0.5rem;
+}
+
+.counter-controls button {
+    margin: 0 1rem;
+}
+
+button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+
+button span {
+    display: block;
+    transition: 0.4s ease-out;
+}
+
+button[data-action="reset"] {
+    color: #fff;
+    opacity: 0.5;
+}
+
+button[data-action="reset"]:hover {
+    opacity: 1;
+}
+
+.save {
+    margin: 2rem -0.5rem 0 -0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save button {
+    color: var(--dark);
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .counter-value {
+        font-size: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        font-size: 0.85rem;
+    }
+
+    .save button {
+        margin: 0 0.5rem;
+    }
+}
