@@ -6,6 +6,7 @@ setInterval(() => {
     let sec = time.getSeconds();
     sec = sec < 10 ? '0' + sec : sec
     min = min < 10 ? '0' + min : min
+    hours = hours < 10 ? '0' + hours : hours
     const day = hours >= 12 ? 'PM' : 'AM'
     clock.textContent = hours + ':' + min + ':' + sec + ' ' + day
 }, );
