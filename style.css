@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@font-face {
+    font-family: RoxaleStory;
+    src: url(fonts/RoxaleStoryCalligraphyItalic-qZMO6.otf);
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    background: #f3f1f1;
+}
+
+h1, h3, h6 {
+    font-family: Montserrat, sans-serif;
+}
+
+h1 {
+    letter-spacing: 0.13rem;
+    color: #263238;
+}
+
+#hero p {
+    line-height: 1.8rem;
+}
+
+#hero p span, .txt{
+    border-bottom: 1px solid #f7df1e;
+}
+
+.txt {
+    padding-bottom: 0.75rem;
+}
+
+#hero span {
+    font-family: RoxaleStory, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+/* From uiverse.io by @alexmaracinaru */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 11px 18px 0px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+   
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: rgb(247, 223, 30, 0.7);
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+   
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #000;
+}
+   
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #000;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+   
+.cta:hover:before {
+    width: 100%;
+    background: rgb(247, 223, 30, 0.7);;
+}
+   
+.cta:hover svg {
+    transform: translateX(0);
+}
+   
+.cta:active {
+    transform: scale(0.95);
+}
+
+#cards {
+    background: #f3f1f1;
+}
+
+#cards img {
+    object-fit: cover;
+}
+
+.card {
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.quiz::after {
+    content: 'Coming soon';
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 78%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    border-top: 1px solid #d2d2d2;
+}
+
+footer {
+    background: #37474f;
+}
+
+
+@media screen and (max-width: 540px) {
+    p {
+        font-size: 14px
+    }
+}
