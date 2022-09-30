@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Destiny Arupi</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/a0b5f4b3f8.js" crossorigin="anonymous"></script>
+    <!-- animate js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <main class="container">
+        <section class="img-wrapper">
+            <nav>
+                <div class="brand-wrapper">
+                    <h1 class="brand-name"><i class="fa-brands fa-asymmetrik"></i>rupi.weather</h1>
+                </div>
+                <div class="search-bar">
+                    <form action="" id="locationInput">
+                        <input 
+                            type="text"
+                            class="search"
+                            id="search-location"
+                        />
+                        <button type="submit" class="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+            <div class="date-time">
+                    <div id="time"></div>
+                <div id="date"></div>
+            </div>
+        </section>
+        <section class="content-wrapper">
+            <div class="heading">
+                <header>
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h1 class="city"></h1>
+                    </div>
+                    <a href="#search-location">change</a>
+                </header>
+                <hr>
+                <div class="current-forecast">
+                    <p>Today's Forecast</p>
+                    <div class="temp-weather">
+                        <div class="temperature">
+                            <h2 class="temp"></h2><sup>&#176;F</sup>
+                        </div>
+                        <div class="temperature-img">
+                            <img src="" alt="weather-icon" class="icon">
+                            <div class="weather-message">
+                                <h2 class="weather-name"></h2>
+                                <small class="fun-message"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-conditions">
+                        <div class="pressure">
+                            <p>Pressure</p>
+                            <p class="pressure-value"></p>
+                        </div>
+                        <hr>
+                        <div class="humidity">
+                            <p>Humidity</p>
+                            <p class="humidity-value"></p>  
+                        </div>
+                        <hr>
+                        <div class="wind">
+                            <p>Wind</p>
+                            <p class="wind-value"></p>
+                        </div>
+                        <hr>
+                        <div class="rain">
+                            <p>Rain</p>
+                            <p class="rain-value"></p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="future-forecast">
+                <p>Weather Details - 7 day forecast</p>
+                <div class="weather-forecast"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha512-Dz4zO7p6MrF+VcOD6PUbA08hK1rv0hDv/wGuxSUjImaUYxRyK2gLC6eQWVqyDN9IM1X/kUA8zkykJS/gEVOd3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
