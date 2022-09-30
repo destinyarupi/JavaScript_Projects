@@ -75,4 +75,7 @@ span{
     .close-icon{
         line-height: 8px;
     }
+    p {
+        font-size: 14px;
+    }
 }

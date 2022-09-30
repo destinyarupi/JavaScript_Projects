@@ -29,7 +29,7 @@ window.onload = () => {
     function offline(){
         toast.classList.add('offline');
         wifiIcon.classList.add('offline');
-        wifiIcon.innerHTML = '<img src="https://img.icons8.com/ios-glyphs/30/000000/offline.png"/>'
+        wifiIcon.innerHTML = '<img src="offline.png"/>'
         document.querySelector('p').innerText = 'Your internet Connection is down.'
     }
     setInterval(() => {
