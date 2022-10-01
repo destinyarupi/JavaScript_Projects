@@ -87,7 +87,7 @@ h1 {
    
 .cta:hover:before {
     width: 100%;
-    background: rgb(247, 223, 30, 0.7);;
+    background: #ffc727;
 }
    
 .cta:hover svg {
