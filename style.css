@@ -57,7 +57,7 @@ h1 {
     left: 0;
     display: block;
     border-radius: 50px;
-    background: rgb(247, 223, 30, 0.7);
+    background: rgb(247, 223, 30);
     width: 45px;
     height: 45px;
     transition: all 0.3s ease;
@@ -98,7 +98,7 @@ h1 {
     transform: scale(0.95);
 }
 
-#cards {
+#cards, #links {
     background: #f3f1f1;
 }
 
@@ -130,9 +130,59 @@ h1 {
 }
 
 footer {
-    background: #37474f;
+    background: #2c393f;
 }
 
+.py-3 a {
+    border-radius: 50%;
+    color: #fff;
+}
+
+.py-3 a.gram {
+    background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.py-3 a.git {
+    color: #333333;
+}
+
+.py-3 a.git:hover {
+    color: #333333;
+}
+
+.primary-button {
+    position: relative;
+    font-weight: 600;
+    height: 40px;
+    padding: 12px 20px;
+    outline: none;
+    border: 1px solid #f3f1f1;
+    border-top: 1px solid #263238;
+    border-left: 1px solid #263238;
+    background-color: transparent;
+    border-radius: 5px;
+    z-index: 1;
+}
+  
+.primary-button:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 5px;
+    left: 6px;
+    height: 100%;
+    background-color: #263238;
+    z-index: -1;
+    transition: all 0.35s;
+    border-radius: inherit;
+}
+  
+.primary-button:hover:after {
+    top: 0px;
+    left: 0px;
+}
+  
 
 @media screen and (max-width: 540px) {
     p {
