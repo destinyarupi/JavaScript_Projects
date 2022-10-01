@@ -4,7 +4,7 @@ const toast = document.getElementById('toast');
 const closeToast = document.getElementById('close')
 
 showToast.addEventListener('click', ()=>{
-    toast.style.transform = 'translateX(0)'
+    toast.style.transform = 'translateX(30px)'
     setTimeout(() => {
         toast.style.transform = 'translateX(400px)'
     }, 4000);
