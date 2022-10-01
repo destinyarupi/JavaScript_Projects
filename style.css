@@ -43,7 +43,7 @@ h1 {
 .cta {
     position: relative;
     margin: auto;
-    padding: 11px 18px 0px;
+    padding: 13px 18px 0px;
     transition: all 0.2s ease;
     border: none;
     background: none;
@@ -57,7 +57,7 @@ h1 {
     left: 0;
     display: block;
     border-radius: 50px;
-    background: rgb(247, 223, 30);
+    background: #ffc727;
     width: 45px;
     height: 45px;
     transition: all 0.3s ease;
