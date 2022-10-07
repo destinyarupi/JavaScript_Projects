@@ -113,7 +113,8 @@ let views = {
             if (task || category) {
                     todoData = {
                         task: task,
-                        category: category,                
+                        category: category,   
+                        status: 'pending',             
                         createdAt: new Date().toLocaleString(undefined, {dateStyle: 'medium', timeStyle: 'short'})
                     }
                     if (!edit) {
@@ -129,6 +130,24 @@ let views = {
             }
             e.target.reset();
         }),
+    updateStatus: 
+        (selectedTask) => {
+            console.log(selectedTask.id);
+            // getting paragraph that contains task name
+            let taskName = selectedTask.parentElement.parentElement.firstElementChild.nextElementSibling;
+            console.log(taskName);
+            // console.log(taskName);
+            if (selectedTask.checked) {
+                taskName.classList.add('checked');
+                // updating the status of selected task to completed
+                todos[selectedTask.id].status = 'completed';
+            } else {
+                taskName.classList.remove('checked');
+                // updating the status of selected task to pending
+                todos[selectedTask.id].status = 'pending';
+            }
+            localStorage.setItem('todoList', JSON.stringify(todos));
+        },
     deleteTodo:
         (id) => {
             if (!document.body.classList.contains('dark')) {
@@ -173,12 +192,6 @@ let views = {
                 })
             }
         },
-    completedTodo:
-        (done) => {
-            let input = done.parentElement.firstElementChild
-            let cross = done.parentElement.parentElement.firstElementChild.nextElementSibling
-            !input.checked ? cross.style.textDecoration = 'line-through' : cross.style.textDecoration = 'none'
-        },
     editTodo:
         (editTodo, id, category) => {
             addTodo.click()
@@ -193,13 +206,14 @@ let views = {
         () => {
             let todo_item = ''
             todos.forEach((todo, id) => {
+                let isCompleted = todo.status == 'completed' ? 'checked' : '';
                 todo_item += `
                     <div class="todo-item">
                         <label >
-                            <input type="checkbox"/>
-                            <span class="checkbox ${todo.category}" onclick="views.completedTodo(this)"></span>
+                            <input type="checkbox" onclick="views.updateStatus(this)" id="${id}" ${isCompleted}/>
+                            <span class="checkbox ${todo.category}"></span>
                         </label>
-                        <p class="todo">${todo.task}</p>
+                        <p class="todo ${isCompleted}">${todo.task}</p>
                         <div class="actions">
                             <button class="editBtn" onclick="views.editTodo(this, ${id}, '${todo.category}')"><i class="fa-regular fa-pen-to-square"></i></button>
                             <button class="delBtn" onclick="views.deleteTodo(${id})"><i class="fa-regular fa-trash-can"></i></button>
@@ -209,7 +223,6 @@ let views = {
             })
             todo_list.innerHTML = todo_item
         } 
-
 }
 
 

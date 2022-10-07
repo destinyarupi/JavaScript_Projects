@@ -138,6 +138,10 @@ input[type="text"] {
     width: 70%;
 }
 
+.todo.checked {
+    text-decoration: line-through;
+}
+
 .checkbox {
     display: block;
     width: 20px;
